@@ -1,20 +1,14 @@
 #!/bin/bash
 
 cleanup() {
-  echo "Container stopped, performing cleanup..."
+  echo "Container stopping, performing cleanup..."
   ./server.sh stop
+  echo "Done"
 }
 
-# Trap SIGTERM
-trap 'true' SIGTERM
+trap cleanup EXIT
 
-# Handle Ctrl-C in case of non-detached mode
-trap 'true' SIGINT
-
-# Start the server
 ./server.sh start
 
 sleep infinity &
-
 wait
-cleanup
