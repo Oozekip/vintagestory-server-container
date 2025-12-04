@@ -5,7 +5,7 @@ This is made to to run a Vintage Story 1.21.5 server in a rootless Podman contai
 
 I made this in part to learn how to use and configure containers; I am by no means an expert at this an have probably made some mistakes.
 
-All scripts are currently only verified to work using rootless Podman on my setup using Arch Linux. They should in theory work on any Linux distribution with Podman installed, as well as on Mac, with the caveat that the script `podman-start.sh` requires the directory `/mnt/vintagestory/data` to exist on the host filesystem and that you have read/write permission. You can easily modify the script to change this if required, and I'm planning to make this more easily customizable in the future. 
+All scripts are currently only verified to work using rootless Podman on my setup using Arch Linux. They should in theory work on any Linux distribution or Mac with Podman installed, with the caveat that the script `podman-start.sh` requires the directory `/mnt/vintagestory/data` to exist on the host filesystem and that you have read/write permission. You can easily modify the script to change this if required, and I'm planning to make this more easily customizable in the future. 
 
 # Basic usage
 
