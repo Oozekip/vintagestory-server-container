@@ -1,7 +1,7 @@
 # Notes
 This is made to to run a Vintage Story 1.21.5 server in a rootless Podman container. 
 
-This will not handle any network or firewall configuraiton for you. You are still responsible for opening up any required ports on your router and allowing access through your computers firewall
+**This will not handle any network or firewall configuraiton for you**. You are still responsible for opening up any required ports on your router and allowing access through your computers firewall
 
 I made this in part to learn how to use and configure containers; I am by no means an expert at this an have probably made some mistakes.
 
